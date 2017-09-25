@@ -31,11 +31,13 @@ public class HouseController extends AbstractHouseController {
         // turning actuator on
         if (intf.getActuatorSetpoint("a_htrr"+(i+1)+"_1")<0.5) {
             intf.setActuator("a_htrr"+(i+1)+"_1", 1.0); //switch heater in room 1 on
+            System.out.println("Tænd");
           }
     	
     	// turning actuator off
     	else {
     		intf.setActuator("a_htrr"+(i+1)+"_1", 0.0); //switch heater in room 1 off
+    		System.out.println("sluk");
     	}
     }
     //System.out.println("T_room1="+intf.getSensorValue("s_tempr1"));
