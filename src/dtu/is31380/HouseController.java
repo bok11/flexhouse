@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class HouseController extends AbstractHouseController {
 
 	double[] SP = {21.0,21.0,21.0,21.0,21.0,21.0,21.0,21.0};
-	double[] delta = {0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5};
+	double[] delta = {1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5};
 	
 	public HouseController() {
 		super(5000); //set timestep to 5000ms
